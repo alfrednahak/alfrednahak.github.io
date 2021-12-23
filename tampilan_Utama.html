@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hyperlink - Hamalan2</title>
+	<title>Halaman_Utama</title>
 </head>
 <body>
 	<ul>
-		<li><a href="tampilan_Login.html" class="link_none">kembali halaman Login</a></li>
-		<li><a href="tampilan_selesai.html" class="link_none3">kembali halaman Selesai</a></li>
+		<li><a href="tampilan_selesai.html" target="_blank" class="link_none3">halaman Selesai=></a></li>
 	</ul>
 		
 
 	<style>
 	 <!-- 
-	 	.link_none{
-	 		text-decoration: none;}
-	  -->
-		}
-		h1{color:lightgreen}
-
-		h1{font-family: serif;
-
-			font-variant:small-caps;
-
-		}
-
 		h2{color:white}
 
 		h2{font-variant: small-caps;
@@ -61,19 +48,30 @@
 	  	padding: 2px 2px;
 	  }
 	  #contoh_bagan_alur_algorithm{
-	  	animation-name: example;
-		animation-duration:2s;
-		animation-iteration-count: 100;
-	  	border: 1px solid black;
-	  	padding: 3px 4px;
-	  	font-family: arial
-	  	font-style:initial;
-	  	background:pink;
-	  	text-decoration: none;
+	  	border: 1px solid red;
+	  	background: black;
+	  	padding: 2px 2px;
+	  	font-size: 15px;
 	  }
-	  @keyframes example{
-			from {background-color:lightblue;}
-			to {background-color:magenta;}
+
+
+
+
+
+
+
+
+
+
+
+
+		.day4{
+			background-color: transparent;
+			font-size: 20px;
+			color: white;
+			border: 1px solid red;
+	  		background: black;
+	  		padding: 2px 2px;
 		}
 	</style>
 
@@ -86,8 +84,8 @@
  	<li><a href="#contoh_kasus_algorithm">contoh kasus algorithm</a></li>
  	<li><a href="#contoh_bagan_alur_algorithm">contoh Bagan alur algorithm</a></li>
  </ul>
-	<h4 class="haha_satu">Hello guys this is my web alfred nahak
-	saya frederius nahak,saya adalah salah satu <br>mahasiswa IT di salah satu universitas yang ada <br>di jakarta, yaitu universitas unindra</h4>
+	<h4 class="haha_satu">Hello guys this is my web alfred nahak.
+	saya frederius nahak,saya adalah salah satu <br>mahasiswa IT di salah satu universitas yang ada <br>di jakarta, yaitu universitas unindra.
 <h3>*below is a description of the algorithm</h3>
 <ul>
 <li><p><h3>penulisan dalam algoritma</h3></p></li>
@@ -146,11 +144,11 @@
 	<li type="circle">{Maks <= Bilangan ke tiga}</li>
 
 	<h4 id="contoh_kasus_algorithm">Contoh Kasus Algoritma<br>dalam kehidupan sehari-hari</h4>
-	<img src="BaganAlur.jpg.png" width="468 × 794 px" alt="bagantabel">
+	<img src="../latihan/Image/BaganAlur.jpg.png" width="468 × 794 px" alt="bagantabel">
+		<h2>bisa lihat Tabel di atas</h2>
 			<p>Misalkan ada seorang Pemuda yang ingin menyebrangi sungai <br>dengan membawa sungai dengan membawa Sayur,
 		Serigala,<br>Kambing. Sedangkan perahu hanya bisa membawa maksimal 2 orang saja.</p>
 		<p>Nah sisi sungai kita sebut saja "A" satunya lagi sebut saja "B"<br>keadaan awal sisi "A" ada Pemuda(P),Serigala(S),Kammbing(K),Sayur(S)</p>
-		<h2>bisa lihat Tabel di bawah ini</h2>
 
 
 </ol>
@@ -158,10 +156,55 @@
 <br>
 
 <p><h3 id="contoh_bagan_alur_algorithm">Berikut contoh bagan alur fungsi algoritma !</h3>dicontoh kan dalam menyalakan komputer</p>
-<img src="flowchat.jpg" alt="From FREDERIUS NAHAK">
+<img src="../latihan/Image/flowchat.jpg" alt="From FREDERIUS NAHAK">
 
 
-
-
+	<h1>Struktur Dasar Algoritma</h1>
+	<ol>
+		<li>Struktur Sequence (Runtunan)</li>
+		<li>Struktur Selection (Pemilihan)</li>
+		<li>Struktur Repetition (Perulangan)</li>
+	</ol>
+	<h2 class="day1"><u>Struktur Sequence (Runtunan)</u></h2>
+	<ul>
+		<li>Algortitma sekuensial atau biasa disebut algortima runtunan merupakan salah satu struktur dasar algoritma yang bisa dikatakan cukup sederhana jika dibandingkan dengan struktur algoritma yang lain.</li>
+		<li>Algoritma Sekuensial bkerja dengan cara mengeksekusi setiap instruksi secara berurutan. Setiap instruksi akan dikerjakan satu persatu pada setiap barisnya dari awal hingga akhir, sesuai dengan urutan penulisan instruksi tersebut.</li>
+		<h2 id="week1">{example}</h2>
+		<li>Terdapat beberapa intruksi dalam sebuah program seperti berikut:</li>
+		<li>instruksi 1</li>
+		<li>instruksi 2</li>
+		<li>instruksi 3</li>
+		<li>instruksi ...n</li>
+		<li>Algoritma sekuensial akan mengeksekusi instruksi 1, kemudian setelah itu instruksi 2 dan seterusnya. Setiap instrksi dikerjakan satu persatu dan hanya sekali (Tidak ada instruksi yang diulang) sampai intruksi ke - n sebagai instruksi terakhir merupakan akhir dari proses algoritmanya.</li>
+		<li>Algoritma sekuensial biasanya digunakan untuk program yang sederhana seperti program menghitung atau progam lainnya yang hanya terdiri dari proses komputer dan input/output dari user.</li>
+		<h2 id="week2">Algoritma Penjumlahan Dua Bilangan</h2>
+		<li><b>Bahasa Natural</b><br>Mulai <br>Inisialisasi variabel a,b <br>dan hasil <br>Masukan nilai a&b <br>Hitung hasil=a+b <br>Tampilan nilai hasil <br>Selesai</li>
+	</ul>
+	<h2 class="day2"> Algoritma Penjumlahan Dua Bilangan</h2>
+	<ul>
+		<li><strong>Pseudecode</strong></li>
+		Algoritma penjumlahan_dua_bilangan <br><br>Deklarasi: <br>var a:b:hasil:integer; <br><br>Deskripsi: <br>a<=6; <br>b<=2; <br>hasil<=a+b;<br>write (hasil)
+	</ul>
+	<h2 id="week3">example sturktur sequence (runtunan)</h2>
+	<ol>
+		<li>Program hitung_luas_persegipanjang; {Judul Program}</li>
+		<li>Var</li>
+		<li>P,L, Luas : integer; {Deklarasi variabel}</li>
+		<li>Begin</li>
+		<li>Write('Masukkan Panjang');</li>
+		<li>Read (P);</li>
+		<li>Write('Masukkan Lebar');</li>
+		<li>Read (L);</li>
+		<li>Luas := P*L;</li>
+		<li>Write('Luas Persegi Panjang =',Luas);</li>
+		<li>Readln;</li>
+		<li>End.</li><br>(Sedikit penjelasan "Bagian 4-12 adalah <strong> <em>Badan Program</em> seperti contoh dibawah</strong>")
+	</ol>
+	<img src="../latihan/Image/image-4.jpg" width="60%" alt="bagantabel">
+	<ul>
+		<li><strong><u>Keterangan</u></strong> : Setiap baris program diatas akan diproses secara urut, mulai dari baris 1 sampai dengan baris 12. <br><strong>Setiap baris proses tidak ada yang dikerjakan lebih dari 1 kali atau tidak dikerjakan/dilewati</strong></li>
+	</ul>
+	<h2 class="day4"><span>contoh urutan instruksi yang berbeda <br>tetapi tidak mempengaruhi hasil.</span></h2>
+	<img src="../latihan/Image/image-6.jpg" width="50%" title="apet">
 </body>
 </html>
